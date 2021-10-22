@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //khởi tạo class vơi từ khóa class
+    class SmartPhone { //tên class
+        //các thuộc tính của class
+        name;
+        color;
+        price;
+        brand;
+
+        //hàm khởi tạo với từ khóa constructor
+        constructor(name, color, price) { //các tham số tương ứng với các thuộc tính
+            this.name = name
+            this.color = color
+            this.price = price
+        }
+
+        getColor() {
+            return this.color
+        }
+
+        setColor(color) {
+            this.color = color
+        }
+
+        getBrand() {
+            return this.brand
+        }
+
+        setBrand(brand) {
+            this.brand = brand
+        }
+
+        faceTime() {
+            document.write("Hello")
+        }
+    }
+
+    //khởi tạo đối tượng với từ khó new; new là đang trỏ đến hàm khởi tạo
+    let iphone = new SmartPhone("Iphone13 Pro Max", "Hường cánh sen", 50000000)
+    console.log(iphone.getBrand())
+    console.log(iphone.getColor())
+    iphone.setBrand("APPLE")
+    console.log(iphone.getBrand())
+    iphone.faceTime()
+</script>
+</body>
+</html>

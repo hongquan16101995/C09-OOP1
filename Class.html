@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //cách 1: dùng function
+    function Person(name, age) {
+        this.name = name
+        this.age = age
+
+        this.getName = function () {
+            return this.name
+        }
+
+        this.eat = function () {
+            return "Ăn"
+        }
+
+        this.say = function (string) {
+            return string
+        }
+    }
+
+    let person1 = new Person("Khương", 19)
+    let person2 = new Person("Vinh", 30)
+    console.log(person1.name)
+    console.log(person1.age)
+
+
+    // let person = {
+    //     name: "quân",
+    //     age: 26,
+    //
+    //     eat:  function () {
+    //         return "Ăn"
+    //     },
+    //
+    //     say: function (string) {
+    //         return string
+    //     }
+    // }
+</script>
+</body>
+</html>

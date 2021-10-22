@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //cách 2: dùng class
+    class MyPerson {
+        name;
+        age;
+
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        getName() {
+            return this.name
+        }
+
+        setName(name) {
+            this.name = name
+        }
+
+        getAge() {
+            return this.age
+        }
+
+        setAge(age) {
+            this.age = age
+        }
+
+        eat() {
+            return "Ăn"
+        }
+
+        say(string) {
+            return string
+        }
+    }
+
+    let person1 = new MyPerson("Khương", 19)
+    console.log(person1.getName())
+    console.log(person1.getAge())
+    person1.setName("Vinh")
+    console.log(person1.getName())
+    console.log(person1.getName())
+    console.log(person1.getName())
+</script>
+</body>
+</html>
